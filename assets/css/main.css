@@ -2260,6 +2260,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		align-items:center;
 		cursor: default;
 		list-style: none;
 		margin-left: -1em;
@@ -2697,6 +2698,20 @@ input, select, textarea {
 
 /* Tiles */
 
+	.skills {
+		background-color: #5E716A;
+		width: 100%;
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 25px;
+		padding: 30px
+	}
+
+	.skills h2 {
+		margin-right: 100px
+	}
+
 	.tiles {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -2769,13 +2784,13 @@ input, select, textarea {
 				display: block;
 				height: 100%;
 				left: 0;
-				opacity: 0.85;
+				opacity: 1;
 				position: absolute;
 				width: 100%;
 				z-index: 2;
 			}
 
-			.tiles article:after {
+			.tiles article.desc:after {
 				background-color: rgba(36, 41, 67, 0.25);
 				content: '';
 				display: block;
@@ -3356,10 +3371,6 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 		padding: 6em 0 2em 0 ;
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
 		border-bottom: 0 !important;
 		cursor: default;
 		height: 60vh;
@@ -3385,7 +3396,7 @@ input, select, textarea {
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.85;
+			opacity: 1;
 			position: absolute;
 			top: 0;
 			width: 100%;
