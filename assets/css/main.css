@@ -1791,12 +1791,20 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		header.major > p {
+		header.major > p.subtitle {
 			font-size: 0.7em;
 			font-weight: 600;
+			margin-bottom: 0em;
 			letter-spacing: 0.25em;
-			margin-bottom: 0;
 			text-transform: uppercase;
+		}
+
+		header.major > p.lastsub {
+			margin-bottom: 2em;
+		}
+
+		header.major > p {
+			font-size: .8em;
 		}
 
 		body.is-ie header.major > :first-child:after {
@@ -1807,13 +1815,6 @@ input, select, textarea {
 			max-width: 100% !important;
 		}
 
-	@media screen and (max-width: 736px) {
-
-		header.major > p br {
-			display: none;
-		}
-
-	}
 
 /* Form */
 
@@ -2721,23 +2722,17 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;
 			-ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
 			transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
-			padding: 4em 4em 2em 4em ;
+			padding: 3em 3em 2em 3em ;
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
 			cursor: default;
-			height: 40vh;
-			max-height: 40em;
-			min-height: 23em;
+			max-height: 80em;
+			min-height: 20em;
 			overflow: hidden;
 			position: relative;
 			width: 40%;
 		}
-
-			.tiles article .image {
-				display: none;
-			}
-
 			.tiles article header {
 				position: relative;
 				z-index: 3;
@@ -2836,10 +2831,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.tiles article {
-				padding: 4em 3em 2em 3em ;
-				height: 30vh;
-				max-height: 30em;
-				min-height: 20em;
+				padding: 4em 3em 2em 3em
 			}
 
 		}
@@ -2856,11 +2848,10 @@ input, select, textarea {
 
 			.tiles article {
 				padding: 3em 1.5em 1em 1.5em ;
-				height: 16em;
+				width: 100% !important;
 				max-height: none;
 				min-height: 0;
 			}
-
 				.tiles article h3 {
 					font-size: 1.5em;
 				}
@@ -2871,19 +2862,15 @@ input, select, textarea {
 
 			.tiles {
 				display: block;
+				width: 100%
 			}
-
-				.tiles article {
-					height: 20em;
-					width: 100% !important;
-				}
 
 		}
 
 /* Contact Method */
 
 	.contact-method {
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 		padding-left: 3.25em;
 		position: relative;
 	}
@@ -2895,7 +2882,7 @@ input, select, textarea {
 		}
 
 		.contact-method h3 {
-			margin: 0 0 0.5em 0;
+			margin: 0;
 		}
 
 /* Spotlights */
@@ -3359,7 +3346,6 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/banner.jpg");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
